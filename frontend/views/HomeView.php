@@ -2,6 +2,7 @@
     $layout = "LayoutTrangChu.php";
 ?>
 <!-- start main  -->
+<?php if($this->modelAgeProducts()){ ?>
 <main class="container products">
     <!-- start session -->
     <h2 style="padding-left: 25px; width: 400px">Sách phù hợp với độ tuổi của bạn</h2>
@@ -57,6 +58,7 @@
 
 <!-- end session -->
 </main>
+<?php } ?>
 <main class="container products">
     <!-- start session -->
     <h2 style="padding-left: 25px;">Bán chạy nhất</h2>

@@ -9,7 +9,7 @@
 			return $result;
 		}
 		public function modelAgeProducts(){
-			if($_SESSION['customer_id']){
+			if(isset($_SESSION['customer_id'])){
 				$customer_id = $_SESSION['customer_id'];
 				$conn = Connection::getInstance();
 				$query = $conn->query("select * from products where age_from <= $customer_id and $customer_id <= age_to");
